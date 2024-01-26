@@ -1,33 +1,25 @@
 import os
 from pathlib import Path 
 
+package_name = "mongodb_connector"
+
 list_of_files = [
-   ".github/workflows/.gitkeep",
+   ".github/workflows/ci.yaml",
    "src/__init__.py",
-   "src/components/__init__.py", 
-   "src/components/data_ingestion.py", 
-   "src/components/data_transformation.py",
-   "src/components/model_trainer.py",
-   "src/components/model_evaluation.py",
-   "src/pipeline/__init__.py",
-   "src/pipeline/training_pipeline.py",
-   "src/pipeline/prediction_pipeline.py",
-   "src/utils/__init__.py",
-   "src/utils/utils.py",
-   "src/logger/__init__.py",
-   "src/logger/logger.py",
-   "src/exceptions/__init__.py",
-   "src/exceptions/exceptions.py",
+   f"src/{package_name}/__init__.py", 
+   f"src/{package_name}/mongo_crud.py", 
    "tests/__init__.py",
    "tests/unit/__init__.py",
+   "tests/unit/unit.py",
    "tests/integration/__init__.py",
+   "tests/integration/integration.py",
    "init_setup.sh",
    "requirements.txt", 
    "setup.py",
    "setup.cfg",
    "pyproject.toml",
    "tox.ini",
-   "experiments/experiments.ipynb"
+   "experiments/experiments.ipynb", 
 ]
 
 for file in list_of_files:

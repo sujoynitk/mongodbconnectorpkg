@@ -1,2 +1,2 @@
-# firstMLOpsProject
-Repository for first MLOps project
+# DatabaseConnector
+Repository for database connector
