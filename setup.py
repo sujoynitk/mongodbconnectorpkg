@@ -13,7 +13,7 @@ AUTHOR_EMAIL = "sujoynitk@gmail.com"
 
 with open("requirements.txt") as f:
     reqs = f.read().splitlines()
-    requirements = [r.strip() for r in reqs if r != 'e .']
+    requirements = [r.strip() for r in reqs if r != '-e .']
     
 setup(
     name=PKG_NAME,
